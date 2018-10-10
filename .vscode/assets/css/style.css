@@ -1,26 +1,8 @@
-/*FAQS*/
-.faq_question {
-    margin: 20px 250px 0px 250px;
-    display: inline-block;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 25px;
-    float: left;
-}
- 
-.faq_answer_container {
-    margin: 0px 270px 0px 270px;
-    height: 0px;
-    font-size: 15px;
-    overflow: hidden;
-    padding: 0px;
-    float: left;
-    text-align: left;
-}
-
 body {
     font-family: 'Oswald', sans-serif;
+    color: black;
 }
+
 .banner {
     padding-top:10px;
     background-color:#aadaff;
@@ -30,6 +12,10 @@ body {
 
 h1 {
     margin-top: 10px;
+}
+
+marquee .jumbotron {
+    background-color: white;
 }
 
 /* Button used to open the contact form - fixed at the bottom of the page */
@@ -83,7 +69,6 @@ h1 {
     
 /* Set a style for the submit/login button */
 .form-container .btn {
-    background-color: #3878c7;
     color: white;
     padding: 16px 20px;
     border: none;
@@ -103,21 +88,21 @@ h1 {
     opacity: 1;
 }
 
-#period {
+.period {
     font-weight: bold;
     margin-top: -5px;
 }
 
-#wind, #date {
+.wind, #date {
     font-size: 10px;
+}
+
+h6 {
+    margin-bottom: 20px;
 }
 
 #icon {
     margin: -10px;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 body {
@@ -141,9 +126,14 @@ body {
     width: 50%;
 }
 
+#left.column.side {
+    text-align: center;
+}
+
 h2 {
     margin-top: 0px;
     margin-bottom: -5px;
+    text-align: center;
 }
 
 /* Clear floats after the columns */
@@ -153,16 +143,21 @@ h2 {
     clear: both;
 }
 
-.box {
-    height: 300px;
-    width:200px;
-    border:2px solid black;
-    float: center right;
+tj, li {
+    width: 200px;
+    margin-left: 20px;
+}
+
+tj {
+    font-weight: bold;
+}
+
+marquee {
+    padding-left: 30px;
 }
 
 .footer {
    position: fixed;
-   left: 0;
    bottom: 0;
    width: 100%;
    background-color:black;
@@ -170,9 +165,114 @@ h2 {
    text-align: center;
 }
 
+/* newfeed style */
+.glyphicon {
+    margin-right:4px !important; /*override*/
+}
+
+.pagination .glyphicon {
+    margin-right:0px !important; /*override*/
+}
+
+.pagination a {
+    color:#555;
+}
+
+.panel ul {
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+.news-item {
+    padding:4px 4px;
+    margin:0px;
+    border-bottom:1px dotted #555; 
+}
+
+#add-news-btn {
+    background: #3878c7
+}
+
+/* CSS for Google Map */
+
+#map {
+    height: 500px;
+}
+
+#right-panel select, #right-panel input {
+    font-size: 15px;
+}
+
+#right-panel select {
+    width: 500px;
+}
+
+#right-panel i {
+    font-size: 12px;
+}
+
+#right-panel {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 5px;
+    top: 60%;
+    margin-top: -195px;
+    height: 330px;
+    width: 200px;
+    padding: 5px;
+    z-index: 5;
+    border: 1px solid #999;
+    background: #fff;
+}
+
+li:nth-child(odd) {
+    background-color: #fcfcfc;
+}
+
+#more {
+    width: 100%;
+    margin: 5px 0 0 0;
+}
+
+.controls {
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    height: 29px;
+    margin-left: 17px;
+    margin-top: 10px;
+    outline: none;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+}
+
+.controls:focus {
+    border-color: #4d90fe;
+}
+
+.title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+} 
+
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1500px) {
-    .column.middle {
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
         width: 100%;
     }
 }

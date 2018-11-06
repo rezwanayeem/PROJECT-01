@@ -1,5 +1,5 @@
 # Project-One
-First group project
+First project
 
 REQUIREMENTS
 •  Must use at least two APIs
